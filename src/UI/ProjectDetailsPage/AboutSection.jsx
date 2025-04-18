@@ -5,7 +5,7 @@ const AboutSection = () => {
   const {openModal} = useContext(Context);
 
   return (
-    <div className="w-full pt-[2rem]">
+    <div className="w-full pt-[2rem] scroll-mt-[81px] md:scroll-mt-[86px] lg:scroll-mt-[57px]" id = "AboutSection">
       <div className="w-full px-[1.5rem] md:px-[2rem] lg:w-[91%] lg:px-[0.75rem] max-w-[1340px] m-auto">
         <div className="w-full">
           <div className="flex justify-center mb-[20px] text-[#525252]">

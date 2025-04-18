@@ -4,7 +4,7 @@ import SectionWrapper from "./SectionWrapper";
 const FloorPlanSection = () => {
   return (
     <SectionWrapper>
-      <div className="w-full">
+      <div className="w-full scroll-mt-[81px] md:scroll-mt-[86px] lg:scroll-mt-[57px]" id = "FloorPlanSection">
         <div className="flex flex-col items-center mb-[20px] text-[#2f2f2f]">
           <h1 className="text-[1.75rem] sm:text-[calc(1.33rem+0.9vw)] xl:text-[2rem] font-bold mb-[1rem]">
             Floor Plans

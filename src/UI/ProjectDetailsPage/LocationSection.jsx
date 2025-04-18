@@ -34,7 +34,7 @@ const LocationAdvantages = [
 
 const LocationSection = () => {
   return (
-    <div className="w-full py-[2.5rem]">
+    <div className="w-full py-[2.5rem] scroll-mt-[81px] md:scroll-mt-[86px] lg:scroll-mt-[57px]" id = "LocationSection">
       <div className="flex justify-center flex-col w-full px-[1.5rem] md:px-[2rem] lg:w-[91%] lg:px-[0.75rem] max-w-[1340px] m-auto">
         <div className="flex flex-col items-center mb-[20px]">
           <h1 className="text-[#2f2f2f] text-[1.75rem] sm:text-[calc(1.33rem+0.9vw)] xl:text-[2rem] font-bold mb-[1rem]">

@@ -5,7 +5,7 @@ const SecondNav = () => {
             <a href = "#AboutSection">Overview</a>
             <a href = "#AmenitiesSection">Amenitites</a>
             <a href = "#FloorPlanSection">Plans & Price</a>
-            <a href = "#GallerySection">Gallary</a>
+            <a href = "#GallarySection">Gallary</a>
             <a href = "#LocationSection">Location</a>
         </div>
     </div>

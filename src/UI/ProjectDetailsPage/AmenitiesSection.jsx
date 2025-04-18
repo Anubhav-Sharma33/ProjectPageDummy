@@ -2,7 +2,7 @@ import AmenitiesList from "./AmenitiesList";
 
 const AmenitiesSection = () => {
   return (
-    <div className="relative bg-fixed bg-center bg-cover flex flex-col items-center justify-center py-[2.5rem] bg-[url('https://sar.ecis.in/api/starestate/star_estate/project_gallery/2025-02-19T12-47-10_g3.jpg')]">
+    <div className="relative bg-fixed bg-center bg-cover flex flex-col items-center justify-center py-[2.5rem] bg-[url('https://sar.ecis.in/api/starestate/star_estate/project_gallery/2025-02-19T12-47-10_g3.jpg')] scroll-mt-[81px] md:scroll-mt-[86px] lg:scroll-mt-[57px]" id ="AmenitiesSection">
       <div className="absolute inset-0 bg-black/75 pointer-events-none z-10"></div>
       <div className="flex justify-center flex-col items-center w-full px-[1.5rem] md:px-[2rem] lg:w-[91%] lg:px-[0.75rem] max-w-[1340px] m-auto">
         <div className=" relative mb-[20px] flex flex-col justify-center items-center  text-white z-20">
