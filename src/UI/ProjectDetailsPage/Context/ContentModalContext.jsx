@@ -18,7 +18,7 @@ export const ModalProvider = ({ children }) => {
     };
   
     return (
-      <ContentModalContext.Provider value={{ openModal, closeModal,setModalContent,modalContent }}>
+      <ContentModalContext.Provider value={{ openModal,closeModal,modalContent,setModalContent}}>
         {children}
         {isModalOpen && (
           <ContentModal/>

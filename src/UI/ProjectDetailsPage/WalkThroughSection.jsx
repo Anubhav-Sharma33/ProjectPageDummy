@@ -3,9 +3,15 @@ import SectionWrapper from "./SectionWrapper";
 import { FormModelContext } from "./Context/FormModalContext";
 import { ContentModalContext } from "./Context/ContentModalContext";
 
+const content = {
+  heading: "Walkthrough",
+  Content:
+    "Life is greener than ever at Orchard Godrej SE7EN, Joka, Kolkata. Step out from the comfort of your home and elope in the serenity of 900+ trees and lengths of green corridors. Self-care is pivotal to tackling challenges thrown at you by the world. Meditate to decorate yourself with utmost blissfulness.",
+};
+
 const WalkThroughSection = () => {
   const { openModal } = useContext(FormModelContext);
-  const { openModal: ContentModal } = useContext(ContentModalContext);
+  const { openModal: OpenContentModal} = useContext(ContentModalContext);
   return (
     <SectionWrapper>
       <div className="w-full flex justify-center flex-wrap text-white">
@@ -16,14 +22,10 @@ const WalkThroughSection = () => {
               <div className="w-full flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center w-[92%] flex-none px-[0.75rem]">
                   <h1 className="text-[1.75rem] sm:text-[calc(1.33rem+0.9vw)] xl:text-[2rem] font-bold mb-[1rem]">
-                    Walkthrough
+                    {content.heading}
                   </h1>
                   <p className="text-center font-normal mb-[1rem] text-[1rem]">
-                    Life is greener than ever at Orchard Godrej SE7EN, Joka,
-                    Kolkata. Step out from the comfort of your home and elope in
-                    the serenity of 900+ trees and lengths of green corridors.
-                    Self-care is pivotal to tackling challenges thrown at you by
-                    the worl...
+                    {content.Content}
                   </p>
                   <div className="flex gap-x-[10px] mt-[1rem] justify-center">
                     <a
@@ -37,8 +39,7 @@ const WalkThroughSection = () => {
                     <button
                       className="min-w-[120px] text-[12px] px-[12px] py-[9px] bg-[#2f2f2f] text-white font-semibold hover:cursor-pointer"
                       onClick={() => {
-                        console.log("Clicked");
-                        ContentModal();
+                        OpenContentModal(content);
                       }}
                     >
                       READ MORE

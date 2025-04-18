@@ -1,8 +1,16 @@
 import { useContext } from "react";
 import { FormModelContext } from "./Context/FormModalContext";
+import { ContentModalContext } from "./Context/ContentModalContext";
+
+const content = {
+  heading: "Project Details",
+  Content:
+    "Orchard at Godrej SE7EN in Joka, Kolkata has a delightful lifestyle enduring timeless elegance. The thoughtfully designed interiors give your home an exquisite vibe. That ascertains extreme joyfulness while setting a benchmark of finest living.Your lavish lifestyle gets a refreshing compliment from nature. Coexist with over 100+ fruit-bearing trees and green walkways to raise the thrill of a tranquil lifestyle.At Joka, Kolkata, Orchard in Godrej SE7EN, a RERA-registered residential project draws refreshment. With the addition of renewable features, Godrej Properties curtail dependency on expensive living standards. Also, it brings positivity, and fresh air into life every moment.",
+};
 
 const AboutSection = () => {
   const {openModal} = useContext(FormModelContext);
+  const { openModal:OpenContentModal } = useContext(ContentModalContext);
 
   return (
     <div className="w-full pt-[2rem] scroll-mt-[81px] md:scroll-mt-[86px] lg:scroll-mt-[57px]" id = "AboutSection">
@@ -29,7 +37,8 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="flex justify-center gap-x-[10px] mt-[1.5rem] font-semibold">
-            <button className="px-[20px] py-[9px] text-[13px] bg-[#2f2f2f] text-white min-w-[120px]">
+            <button className="px-[20px] py-[9px] text-[13px] bg-[#2f2f2f] text-white min-w-[120px] hover:cursor-pointer" onClick={()=>{
+             OpenContentModal(content)}}>
               READ MORE
             </button>
             <a
