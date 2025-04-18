@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import SectionWrapper from "./SectionWrapper";
-import { Context } from "./Context/ModalContext";
+import { FormModelContext } from "./Context/FormModalContext";
 
 const WalkThroughSection = () => {
-  const {openModal} = useContext(Context);
+  const {openModal} = useContext(FormModelContext);
   return (
     <SectionWrapper>
       <div className="w-full flex justify-center flex-wrap text-white">

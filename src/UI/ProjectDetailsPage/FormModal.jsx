@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { Context } from "./Context/ModalContext";
+import { FormModelContext } from "./Context/FormModalContext";
 
 const FormModal = () => {
-  const { closeModal } = useContext(Context);
+  const { closeModal } = useContext(FormModelContext);
   return (
     <div className="h-full m-[1rem] flex items-center justify-center">
       <div className="w-full relative bg-[url('https://www.starestate.com/assets/images/card-bg.webp')] p-[20px] shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] flex flex-col items-center sm:max-w-[500px]">

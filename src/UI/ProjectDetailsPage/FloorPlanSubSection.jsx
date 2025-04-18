@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { Context } from "./Context/ModalContext";
+import { FormModelContext } from "./Context/FormModalContext";
 
 const FloorPlanSubSection = () => {
-  const {openModal} = useContext(Context);
+  const {openModal} = useContext(FormModelContext);
   return (
     <div className="w-full sm:flex-[0_0_50%] md:flex-[0_0_33.3333%] px-[0.75rem]">
       <div

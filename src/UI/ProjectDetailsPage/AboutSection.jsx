@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { Context } from "./Context/ModalContext";
+import { FormModelContext } from "./Context/FormModalContext";
 
 const AboutSection = () => {
-  const {openModal} = useContext(Context);
+  const {openModal} = useContext(FormModelContext);
 
   return (
     <div className="w-full pt-[2rem] scroll-mt-[81px] md:scroll-mt-[86px] lg:scroll-mt-[57px]" id = "AboutSection">
