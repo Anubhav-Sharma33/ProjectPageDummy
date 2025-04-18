@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import SectionWrapper from "./SectionWrapper";
 import { FormModelContext } from "./Context/FormModalContext";
+import { ContentModalContext } from "./Context/ContentModalContext";
 
 const WalkThroughSection = () => {
-  const {openModal} = useContext(FormModelContext);
+  const { openModal } = useContext(FormModelContext);
+  const { openModal: ContentModal } = useContext(ContentModalContext);
   return (
     <SectionWrapper>
       <div className="w-full flex justify-center flex-wrap text-white">
@@ -24,10 +26,21 @@ const WalkThroughSection = () => {
                     the worl...
                   </p>
                   <div className="flex gap-x-[10px] mt-[1rem] justify-center">
-                    <a className="text-center min-w-[120px] text-[12px] px-[12px] py-[9px] bg-white text-black font-semibold hover:cursor-pointer" onClick={()=>{openModal()}}>
+                    <a
+                      className="text-center min-w-[120px] text-[12px] px-[12px] py-[9px] bg-white text-black font-semibold hover:cursor-pointer"
+                      onClick={() => {
+                        openModal();
+                      }}
+                    >
                       VIEW
                     </a>
-                    <button className="min-w-[120px] text-[12px] px-[12px] py-[9px] bg-[#2f2f2f] text-white font-semibold hover:cursor-pointer">
+                    <button
+                      className="min-w-[120px] text-[12px] px-[12px] py-[9px] bg-[#2f2f2f] text-white font-semibold hover:cursor-pointer"
+                      onClick={() => {
+                        console.log("Clicked");
+                        ContentModal();
+                      }}
+                    >
                       READ MORE
                     </button>
                   </div>
